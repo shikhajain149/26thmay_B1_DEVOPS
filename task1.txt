@@ -1,0 +1,5 @@
+<$ sudo useradd -m ghost>
+<$ cd /home>
+</home$ ls>
+</home$sudo userdel -r ghost>
+</home$ ls>
