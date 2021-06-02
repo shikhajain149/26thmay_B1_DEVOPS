@@ -1,3 +1,4 @@
+1: to remove a pacakage completely from ubuntu
 <$ sudo apt install -f>
 <sudo apt-get remove f>
 <sudo apt-get clean>
