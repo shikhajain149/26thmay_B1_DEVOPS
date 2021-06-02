@@ -1,0 +1,25 @@
+1:-create a user "test" and work on "test" user desktop
+<a :- user logged in desktop> 
+<$ cd Desktop >
+<$ pwd> 
+</Desktop$ sudo adduser test>
+
+
+2:-create a directory welcome whose group is lnb 
+<$ sudo mkdir welcome> 
+<$ sudo groupadd lnb >
+<$ chown root:lnb/welcome> 
+
+3:- add 3 users i.e:- u1,u2,u3 in "lnb" group
+<$ sudo useradd   U1>
+<$ sudo useradd   U2>
+<$ sudo useradd   U3>
+<$ sudo usermod -a -G lnb U1>
+<$ sudo usermod -a -G lnb U2>
+<$ sudo usermod -a -G lnb U3> 
+                     
+4:- group members can do anythinng or any operation and others can do only read
+<$ chmod g+rwx lnb> 
+<$ chmod o-wx lnb >
+
+ 
