@@ -1,0 +1,4 @@
+1. to switch from graphically to terminal only 
+<ctrl+alt+f3>
+<login name >
+<password>
