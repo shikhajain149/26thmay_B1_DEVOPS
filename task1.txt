@@ -24,6 +24,7 @@ enter    // first sector
 
 
 3. Volume detach and attach to new machine in which apache is installed and apache root directory should be /root/new
+<$ sudo -i>
 <root#- apt install apache2>
 <root#-systemctl status apache2>
 <root#-mkdir /root/new>
