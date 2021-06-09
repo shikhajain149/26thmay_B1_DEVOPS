@@ -1,0 +1,35 @@
+
+1. Create a  ALB that redirects 70% traffic to taregt 1 and 30% traffic to target 2.
+
+
+2. In target 1 and 2 install apache2 web server
+<$ sudo -i>
+<root#- apt install apache2>
+<root#-systemctl status apache2> // in target 1
+
+<$ sudo -i>
+<root#- apt install apache2>
+<root#-systemctl status apache2> // in target 2
+
+
+3. Target 1 web server should display "Hi I am target1" in its output.
+<root#- echo  " " >index.html>
+<$ sudo -i>
+<root#- vim index.html>
+// Hi I am target 1
+//:wq -save 
+
+
+4. Target 2 web server should display "Hi I am target2" in its output.
+<root#- echo  " " >index.html>
+<$ sudo -i>
+<root#- vim index.html>
+// Hi I am target 2
+//:wq -save 
+
+
+
+
+
+
+
