@@ -1,6 +1,7 @@
 1. Create a  ALB that redirects 70% traffic to taregt 1 and 30% traffic to target 2.
 ALB -> Listeners -> view/edit rules -> target 1- 70
                                     -> target 2-30
+<img src=alb.png>                                 
                                     
 
 2. In target 1 and 2 install apache2 web server
