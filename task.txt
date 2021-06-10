@@ -1,0 +1,23 @@
+1.Mount your google drive to your laptop at /mnt/drive.
+
+
+
+
+2. Create S3 bucket with name "devops26thmay-your name"
+<img src=bucket.png>
+
+
+3. Create a folder name "new" and place a index.html file there.
+<img src= new.png>
+<img src=file.png>
+
+
+4. Make file publically accessible.
+<img src=public.png>
+
+
+
+
+
+
+
