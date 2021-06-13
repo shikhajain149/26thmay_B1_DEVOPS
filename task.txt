@@ -1,0 +1,25 @@
+1.Create a webserver using nginx/apache to host a webpage having content as "Welcome to LINUX".
+<$ sudo apt install apache2> // on instance 1 - ub1
+<$ sudo -i>
+<root#-echo ""Welcome to LINUX"<index.html>
+
+2. Create a new instance and install nginx on it.
+<$sudo apt install nginx> //on instance ub2
+<$sudo systemctl stop apache2>
+<$sudo systemctl restart nginx>
+<$sudo systemctl status nginx.service>
+<$sudo -i>
+<root#-echo "Hello"<index.html>
+
+3.Create a proxy pass on nginx to redirect the traffic to the machine which we have created in step 1 .
+<$vim default> // on ub2
+<server_name 18.217.109.151>  // in vim editor
+//location
+<proxy_pass http;// 3.138.153.4>
+<$sudo systemctl restart nginx.service>
+
+
+
+
+
+
