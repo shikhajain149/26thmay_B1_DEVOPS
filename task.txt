@@ -1,0 +1,22 @@
+1.What is alpine image?
+A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!
+Alpine Linux is a Linux distribution built around musl libc and BusyBox. It has access to a package repository that is much more complete than other BusyBox based images. This makes Alpine Linux a great image base for utilities and even production applications.
+
+
+2.Create a container with name example using ubuntu:20.04 docker image with a process that should run in the background.
+< docker pull ubuntu:20.04>
+<docker run -it --name example ubuntu:20.04>
+<docker run -d ubuntu:20.04 sleep 200>
+
+
+3.After running container get bash shell in above container.
+<docker exec -it example bash>
+
+
+4.Create a user test with pass q.
+<docker exec -it example bash>
+<root#-useradd  test>
+<root3-passwd  test>
+//password is set to q
+
+
