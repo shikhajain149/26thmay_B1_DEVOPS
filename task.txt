@@ -1,0 +1,35 @@
+1.Install docker
+ <sudo apt-get update>
+< sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release>
+<curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg>
+<echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null>
+<sudo apt-get update>
+ <sudo apt-get install docker-ce docker-ce-cli containerd.io>
+<sudo groupadd docker>
+<sudo usermod -aG docker $USER>
+<newgrp docker> 
+
+
+2.Pull ubuntu:20.04 docker image
+<docker pull ubuntu:20.04>
+
+
+3.Perform start ,stop and pause operations on a container made from ubuntu:20.04 image.
+
+
+
+
+4.In the launched container above get bash shell of the container
+<docker exec -it hii bash>//hii- name of container
+
+
+
+
+
