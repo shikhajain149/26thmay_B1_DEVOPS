@@ -22,8 +22,10 @@
 
 
 3.Perform start ,stop and pause operations on a container made from ubuntu:20.04 image.
-
-
+<docker run --name hii ubuntu:20.04>
+<docker start hii>
+<docker stop hii>
+<docker pause hii>
 
 
 4.In the launched container above get bash shell of the container
