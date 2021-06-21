@@ -1,0 +1,22 @@
+1.Launch 5 nginx webserver from port 3000-3004 with name nginx-count no(nginx-1).
+<docker run -d -p 3000:80  --name nginx-1 nginx>
+<docker run -d -p 3001:80  --name nginx-2 nginx>
+<docker run -d -p 3002:80  --name nginx-3 nginx>
+<docker run -d -p 3003:80  --name nginx-4 nginx>
+<docker run -d -p 3004:80  --name nginx-5 nginx>
+<docker ps>
+
+
+2.Launch a alpine image conatiner and install nginx on it curl the webpage from inside the container.
+<docker run -d -p 3005:80 --name test nginx:stable-alpine>
+<docker exec -it test sh>
+/#- cd  /etc/nginx/
+/#-ls
+/#- cd conf.d
+/#-cat default.conf 
+/#-cd /usr/share/nginx/html/      // root directory location
+/#-apk update
+/#- echo "HI EVERYONE">index.html
+/#-curl localhost
+HII EVERYONE             // output of curl 
+
